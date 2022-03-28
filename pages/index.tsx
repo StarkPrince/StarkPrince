@@ -1,4 +1,5 @@
 import React from "react";
+import { ToastContainer } from "react-toastify";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import MeetEvent from "../components/MeetEvent";

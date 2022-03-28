@@ -69,8 +69,9 @@ a {
   // @apply mr-2 hidden font-dank-mono text-neutral-500 absolute top-0 leading-none;
 }
 
-// @screen sm {
-//   .stylistic-quote-mark {
-//     @apply block;
-//   }
-// }
+@screen sm {
+  .stylistic-quote-mark {
+    @apply block;
+  }
+}
+

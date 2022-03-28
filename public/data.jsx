@@ -2,6 +2,13 @@
 
 export const projects = [
     {
+        title: "A utility for picking more suitable questions from codeforces",
+        subtitle: "PR Ladders",
+        description: "Being a student, I was always interested in solving problems. I wanted to make a tool for picking suitable questions from codeforces. I decided to make a web application for this purpose. Every questions has a frequency which shows how many people who solved that specific question got a positive delta of 150 or more in 6 months. The idea is taken from a2oj ladders.",
+        image: "./images/pr-ladders.png",
+        link: "https://ladders.princeraj.co/",
+    },
+    {
         title: "Fishify",
         subtitle: "Sushil-Fish-Cart",
         description:

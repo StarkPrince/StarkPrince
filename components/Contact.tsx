@@ -1,4 +1,35 @@
 import React from 'react'
+import toast, { Toaster } from "react-hot-toast";
+import classNames from "classnames";
+import { MdOutlineClose } from "react-icons/md";
+import { HiMail } from "react-icons/hi";
+import styles from "./Contact.module.css";
+
+const notify = () =>
+    toast.custom(
+        (t) => (
+            <div
+                className={classNames([
+                    styles.notificationWrapper,
+                    t.visible ? "top-0" : "-top-96",
+                ])}
+            >
+                <div className={styles.iconWrapper}>
+                    <HiMail />
+                </div>
+                <div className={styles.contentWrapper}>
+                    <h1>Email Sent</h1>
+                    <p>
+                        Thanks for showing interest in working with me, I will contact you as soon as possible.
+                    </p>
+                </div>
+                <div className={styles.closeIcon} onClick={() => toast.dismiss(t.id)}>
+                    <MdOutlineClose />
+                </div>
+            </div>
+        ),
+        { id: "unique-notification", position: "top-center" }
+    );
 
 function Contact()
 {
@@ -23,7 +54,7 @@ function Contact()
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", name, email, message }),
         })
-            .then(() => alert("Message sent!"))
+            .then(() => notify())
             .catch((error) => alert(error));
     }
 
@@ -62,7 +93,7 @@ function Contact()
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                                 PHONE
                             </h2>
-                            <p className="leading-relaxed">123-456-7890</p>
+                            <p className="leading-relaxed">800-326-6242</p>
                         </div>
                     </div>
                 </div>
@@ -74,8 +105,8 @@ function Contact()
                         Hire Me
                     </h2>
                     <p className="leading-relaxed mb-5">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                        suscipit officia aspernatur veritatis. Asperiores, aliquid?
+                        I am a full-stack developer with a passion for building
+                        things that people love. I always try to go out of my comfort zone and learn new things to improve the end user experience.
                     </p>
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -119,9 +150,10 @@ function Contact()
                         className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                         Submit
                     </button>
-                </form>
-            </div>
-        </section>)
+                    <Toaster />
+                </form >
+            </div >
+        </section >)
 }
 
 export default Contact
