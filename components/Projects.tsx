@@ -13,9 +13,7 @@ export default function Projects()
                         Apps I've Built
                     </h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-                        facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-                        fuga dolore.
+                        I sincerely believe that the idea and helpfulness of the project matters more than its anything else in web development.
                     </p>
                 </div>
                 <div className="flex flex-wrap -m-4">
