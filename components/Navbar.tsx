@@ -3,8 +3,8 @@ import React from 'react'
 function Navbar()
 {
     return (
-        // flex-col md:flex-row bg-gray-800 
-        <header className="bg-gray-800 md:sticky top-0 z-10">
+        // flex-col md:flex-row bg-gray-800 md:sticky 
+        <header className="bg-gray-800 top-0 z-10">
             <div className="container flex flex-wrap p-5 justify-around">
 
                 <a href="#projects" className="inline-flex items-center title-font font-bold text-white mb-4 md:mb-0 lg:text-2xl md:text-xl text-md mr-3 mt-3">
