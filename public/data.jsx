@@ -2,14 +2,14 @@
 
 export const projects = [
     {
-        title: "A utility for picking more suitable questions from codeforces",
+        title: "Pick right questions",
         subtitle: "PR Ladders",
         description: "Being a Competitive Programing enthusiast, I desired for a tool for picking suitable questions from codeforces of given difficulty range. So, I made one. Questions have a frequency of how many people who solved that question got a positive delta of 150 or more in 6 months.",
         image: "./images/pr-ladders.png",
         link: "https://ladders.princeraj.co/",
     },
     {
-        title: "Fishify",
+        title: "Buy Fresh Fishes",
         subtitle: "Sushil-Fish-Cart",
         description:
             "A fully functional and responsive e-commerce site with payment integration, email support, used by hundreds of individuals to buy fishes. Set up cloudinary to host media library, Validated emailjs as email service, Integrated stipe for payment gateway and strapi as backend API.",
@@ -17,7 +17,7 @@ export const projects = [
         link: "https://sushil-cart.netlify.app/",
     },
     {
-        title: "Django App for listing properties",
+        title: "Buying home went easy",
         subtitle: "PR Real Estate",
         description:
             "Hosts listings for homes, lands, and rentals. It provides detailed overviews of the local housing market, categorized by market trends, school ratings, current available homes and rentals, and top-rateed local agents. Used Django as backend, ejs and PostgreSQL as database.",
@@ -25,7 +25,7 @@ export const projects = [
         link: "https://prrealestate.herokuapp.com/",
     },
     {
-        title: "Momentsbin",
+        title: "Capture your moments",
         subtitle: "React and Firebase",
         description:
             "A web app to store all your moments allows users to log in, like, and comment on others’ memories and delete and edit their memories.    Structured MongoDB as a database, React.js for the front-end, Redux for state management, and firebase for deployment.",
@@ -123,7 +123,6 @@ export const profiles = [
 
 
 export const skills = [
-    "C++",
     "HTML",
     "CSS",
     "Python",
@@ -132,19 +131,20 @@ export const skills = [
     "Redux",
     "Node.js",
     "Next.js",
-    "Strapi.js",
+    // "Strapi.js",
     "Git",
-    "Postman API",
-    "Redux Thunk",
-    "Embedded JavaScript (EJS)",
+    "C++",
+    "Postman",
+    // "Redux Thunk",
+    // "Embedded JavaScript (EJS)",
     "MongoDB",
     "Bootstrap",
-    "Adobe XD",
+    // "Adobe XD",
     "WordPress",
-    "jQuery",
-    "REST APIs",
-    "PostgreSQL",
-    "MySQL",
+    // "jQuery",
+    // "REST APIs",
+    // "PostgreSQL",
+    // "MySQL",
     "mongoose",
     "API Development",
 ];

@@ -2,7 +2,7 @@ import React from "react";
 import { ToastContainer } from "react-toastify";
 import About from "../components/About";
 import Contact from "../components/Contact";
-import MeetEvent from "../components/MeetEvent";
+// import MeetEvent from "../components/MeetEvent";
 import Navbar from "../components/Navbar";
 import Profiles from "../components/Profiles";
 import Projects from "../components/Projects";
@@ -17,7 +17,7 @@ export default function App()
       <Profiles />
       <Projects />
       <Skills />
-      <MeetEvent />
+      {/* <MeetEvent /> */}
       <Contact />
     </main>
   );
