@@ -26,7 +26,7 @@ function Navbar()
                 {/* <a href="#meetEvent" className="title-font font-bold text-white mb-4 md:mb-0 text-2xl mt-3">
                     Meet Event
                 </a> */}
-                <a href="https://blog.princeraj.co" target="_blank" rel="noopener noreferrer" className='inline-flex items-center title-font font-bold text-white mb-4 md:mb-0 lg:text-2xl md:text-xl text-md mr-3 mt-3'>
+                <a href="https://blogs-fawn.vercel.app/" target="_blank" rel="noopener noreferrer" className='inline-flex items-center title-font font-bold text-white mb-4 md:mb-0 lg:text-2xl md:text-xl text-md mr-3 mt-3'>
                     {/* an svg for a pencil on a notepad */}
                     <svg className="lg:h-6  lg:w-6 h-4 w-4 mr-2" viewBox="0 0 24 24" fill="none">
                         <path d="M14.828 14.828L19 19M14.828 9.172L19 5M14.828 14.828L5 19M9.172 14.828L5 5M14.828 9.172L5 5M9.172 9.172L5 5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
