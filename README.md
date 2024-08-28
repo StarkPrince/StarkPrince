@@ -1,6 +1,6 @@
 # Hey there, I'm  [PRINCE RAJ](https://princeraj.co/) <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
-### Third-year student at NIT Rourkela, who love to create smooth and fluent web applications. Experience in React, Redux, Node.js, Strapi api and Django.. I love competitive programming and problems that challenge me.
+### Final-year student at NIT Rourkela, who love to create smooth and fluent web applications. Experience in React, Redux, Node.js, Strapi api and Django.. I love competitive programming and problems that challenge me.
 
 <br />
 
