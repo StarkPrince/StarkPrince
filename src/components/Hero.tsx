@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Code, Github, Linkedin, Mail } from 'lucide-react'
+import Image from "next/image"
 import Link from "next/link"
 
 export function Hero()
@@ -7,21 +8,13 @@ export function Hero()
     return (
         <section className="container flex flex-col items-center justify-center space-y-4 py-24 text-center">
             <div className="rounded-full bg-muted p-4 text-muted-foreground">
-                <svg
-                    className="h-24 w-24"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                </svg>
+                <Image
+                    src="https://i.imgur.com/oGoxAXh.jpeg"
+                    alt="Prince Raj"
+                    className="rounded-full p-0"
+                    width={200}
+                    height={200}
+                />
             </div>
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
                 Prince Raj
@@ -49,7 +42,7 @@ export function Hero()
             <div className="flex space-x-4">
                 <Button asChild variant="outline">
                     <Link href="https://dev.to/starkprince">
-                        Blog <Code className="ml-2 h-4 w-4" />
+                        Dev.to <Code className="ml-2 h-4 w-4" />
                     </Link>
                 </Button>
                 <Button asChild variant="outline">

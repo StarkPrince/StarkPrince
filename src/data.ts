@@ -58,6 +58,33 @@ export const projects = [
     image: "https://i.imgur.com/0sI3Edo.png",
   },
   {
+    title: "Workflow Automation Platform",
+    shortDescription:
+      "A platform to automate tasks and integrate various applications seamlessly.",
+    fullDescription:
+      "This workflow automation platform empowers users to connect multiple applications and automate repetitive tasks effortlessly. Featuring a modern and intuitive user interface, it allows users to create multi-step workflows, schedule automation, and monitor activity logs. With pre-built integrations and custom webhook support, the platform is designed for scalability and adaptability to diverse workflows.",
+    period: "Aug. 2023 - Sep. 2023",
+    techStack: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Webhooks",
+      "REST API",
+      "Redux Toolkit",
+    ],
+    highlights: [
+      "User-friendly interface for building multi-step workflows",
+      "Pre-built integrations with popular applications",
+      "Custom webhook support for advanced use cases",
+      "Real-time activity monitoring and error tracking",
+      "Schedule-based and trigger-based automation options",
+      "Scalable backend with robust REST API integration",
+    ],
+    github: "https://github.com/yourusername/workflow-automation",
+    live: "https://workflowautomation-example.com",
+    image: "https://i.imgur.com/NzqgbCC.png",
+  },
+  {
     title: "Habit Analytics Tracker",
     shortDescription:
       "A comprehensive habit tracking application with analytics and progress insights.",
