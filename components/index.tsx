@@ -1,7 +1,0 @@
-export { default as Navbar } from './Navbar'
-export { default as About } from './About'
-export { default as Projects } from './Projects'
-export { default as Skills } from './Skills'
-export { default as Profiles } from './Profiles'
-export { default as MeetEvent } from './MeetEvent'
-export { default as Contact } from './Contact'
