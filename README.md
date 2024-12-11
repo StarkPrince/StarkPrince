@@ -1,5 +1,5 @@
 
-# Prince Raj   [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=safari)](https://princeraj.one)
+# Prince Raj
   
 
 ## Full Stack Developer
@@ -16,8 +16,7 @@ Check out my portfolio at [princeraj.one](https://princeraj.one/) to see my late
 
 ## GitHub Status
 
-<p align="center"> <img src="https://gstats.princeraj.one/api?username=Starkprince&show_icons=true&hide_border=true&bg_color=00000000&text_color=3498db" alt="dhruba-datta" />
-
+<p align="center"> <img src="https://stats-rdokt3p0e-starkprinces-projects.vercel.app/api?username=Starkprince&show_icons=true&hide_border=true&bg_color=00000000&text_color=3498db" alt="dhruba-datta" />
 
 
 ## 💻 Technical Skills
@@ -30,4 +29,4 @@ const skills = {
   frontend: ['React.js', 'Next.js', 'Redux'],
   databases: ['MongoDB', 'PostgreSQL', 'MySQL'],
   devops: ['Docker', 'AWS', 'Nginx']
-}```
+}
