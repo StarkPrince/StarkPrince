@@ -124,3 +124,29 @@ export const projects = [
   //   image: "",
   // },
 ];
+
+export const experiences = [
+  {
+      title: "Backend Developer",
+      company: "MithilaStack",
+      period: "Aug. 2024 - Present",
+      responsibilities: [
+          "Developed a contract management system, ensuring data integrity and compliance with CIA principles, improving audit traceability by 3x.",
+          "Optimized database performance through strategic indexing and schema refinements, achieving 99.95% uptime and 40% reduction in query latency.",
+          "Automated ticketing system processing 100+ daily tickets with 95% accuracy in geospatial assignments, reducing manual routing by 75%.",
+          "Implemented RBAC system managing 6 role hierarchies and 20+ permission sets with JWT, Zod-based validation, and rate limiting preventing unauthorized access.",
+          "Real-time chat systems with socket servers, enabling seamless collaboration and reducing response time.",
+          "Streamlined document management with file uploads, metadata processing, and 2-factor OTP verification.",
+          "Monitoring and error-handling frameworks for centralized logging, issue resolution and fault tolerance."
+      ]
+  },
+  {
+      title: "Software Engineering Intern",
+      company: "Pariksha Labs",
+      period: "Mar. 2023 - Jul. 2024",
+      responsibilities: [
+          "Built React.js form for SAP deployment, integrated CSV import and MongoDB storage.",
+          "Automated cloud provisioning and infrastructure using Terraform and Jenkins."
+      ]
+  }
+]
