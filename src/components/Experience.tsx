@@ -1,10 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Link from "next/link"
 
 const experiences = [
     {
         title: "Backend Developer",
         company: "MithilaStack",
         period: "Aug. 2024 - Present",
+        redirect: "/nyas",
         responsibilities: [
             "Developed a contract management system, ensuring data integrity and compliance with CIA principles, improving audit traceability by 3x.",
             "Optimized database performance through strategic indexing and schema refinements, achieving 99.95% uptime and 40% reduction in query latency.",
@@ -17,6 +19,7 @@ const experiences = [
     },
     {
         title: "Software Engineering Intern",
+        redirect: "/nyas",
         company: "Pariksha Labs",
         period: "Mar. 2023 - Jul. 2024",
         responsibilities: [
@@ -36,7 +39,11 @@ export function Experience()
                     <Card key={index} className="relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
                         <CardHeader>
-                            <CardTitle>{exp.title}</CardTitle>
+                            <CardTitle>
+                                <Link href={exp.redirect}>
+                                    {exp.title}
+                                </Link>
+                            </CardTitle>
                             <CardDescription>{exp.company} | {exp.period}</CardDescription>
                         </CardHeader>
                         <CardContent>
