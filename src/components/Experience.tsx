@@ -1,5 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
+import { NyasExperience } from "./NyasExperience"
 
 const experiences = [
     {
@@ -33,8 +32,8 @@ export function Experience()
 {
     return (
         <section id="experience" className="container py-12">
-            <h2 className="text-3xl font-bold tracking-tight mb-8">Experience</h2>
-            <div className="space-y-8">
+            <NyasExperience />
+            {/* <div className="space-y-8">
                 {experiences.map((exp, index) => (
                     <Card key={index} className="relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-1 h-full bg-primary"></div>
@@ -55,7 +54,7 @@ export function Experience()
                         </CardContent>
                     </Card>
                 ))}
-            </div>
+            </div> */}
         </section>
     )
 }
