@@ -1,55 +1,54 @@
 "use client"
 
-import { motion, useScroll, useTransform } from "framer-motion"
-import { useEffect, useRef, useState } from "react"
+import { wrap } from "@motionone/utils"
+import { motion, useAnimationFrame, useMotionValue, useScroll, useSpring, useTransform, useVelocity } from "framer-motion"
+import { useRef } from "react"
 
 interface ParallaxTextProps
 {
-  children: React.ReactNode
+  children: string
   baseVelocity?: number
 }
 
-export const ParallaxText = ({ children, baseVelocity = 5 }: ParallaxTextProps) =>
+export function ParallaxText({ children, baseVelocity = 5 }: ParallaxTextProps)
 {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const textRef = useRef<HTMLDivElement>(null)
-  const [textHeight, setTextHeight] = useState(0)
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
+  const baseX = useMotionValue(0)
+  const { scrollY } = useScroll()
+  const scrollVelocity = useVelocity(scrollY)
+  const smoothVelocity = useSpring(scrollVelocity, {
+    damping: 50,
+    stiffness: 400
+  })
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    clamp: false
   })
 
-  const y = useTransform(scrollYProgress, [0, 1], [`${textHeight}px`, `-${textHeight}px`])
+  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`)
 
-  useEffect(() =>
+  const directionFactor = useRef<number>(1)
+  useAnimationFrame((t, delta) =>
   {
-    if (textRef.current) {
-      setTextHeight(textRef.current.offsetHeight)
-    }
-  }, [children])
+    let moveBy = directionFactor.current * baseVelocity * (delta / 1000)
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"])
+    if (velocityFactor.get() < 0) {
+      directionFactor.current = -1
+    } else if (velocityFactor.get() > 0) {
+      directionFactor.current = 1
+    }
+
+    moveBy += directionFactor.current * moveBy * velocityFactor.get()
+
+    baseX.set(baseX.get() + moveBy)
+  })
 
   return (
-    <div ref={containerRef} className="relative overflow-hidden w-full py-10">
-      <motion.div
-        ref={textRef}
-        style={{ x, y }}
-        animate={{ x: ["0%", "-100%"] }}
-        transition={{
-          x: {
-            repeat: Infinity,
-            repeatType: "loop",
-            duration: 100 / baseVelocity,
-            ease: "linear",
-          },
-        }}
-        className="text-8xl font-extrabold text-primary/3 whitespace-nowrap flex gap-4"
-      >
-        <span className="block my-30">{children}</span>
-        <span className="block my-30 text-transparent">filler</span>
-        <span className="block my-30">{children}</span>
+    <div className="parallax-text-container overflow-hidden whitespace-nowrap flex flex-nowrap py-4 sm:py-4">
+      <motion.div className="text-4xl md:text-6xl lg:text-8xl font-extrabold text-primary flex whitespace-nowrap flex-nowrap" style={{ x }}>
+        <span className="block mr-4">{children}</span>
+        <span className="block mr-4 text-transparent">fil</span>
+        <span className="block mr-4">{children}</span>
+        <span className="block mr-4 text-transparent">fil</span>
+        <span className="block mr-4">{children}</span>
       </motion.div>
     </div>
   )

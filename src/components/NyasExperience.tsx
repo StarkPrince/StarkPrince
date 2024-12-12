@@ -45,7 +45,7 @@ export function NyasExperience()
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl sm:text-5xl md:text-7xl font-black text-left mb-24 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-500 to-pink-500"
+                        className="text-4xl sm:text-5xl md:text-7xl font-black text-center mb-24 bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-500 to-pink-500"
                         style={{ fontFamily: "'Montserrat', sans-serif" }}
                     >
                         Work Accomplishments
