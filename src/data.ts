@@ -37,7 +37,7 @@ export const projects = [
     ],
     github: "https://github.com/StarkPrince/nyas-fieldengineer-web",
     live: "https://fieldengineer.vercel.app/",
-    image: "https://i.imgur.com/NzqgbCC.png",
+    image: "https://i.imgur.com/Xmho3YB.png",
   },
   {
     title: "PR Blogs",
@@ -103,33 +103,33 @@ export const projects = [
     live: "http://18.219.245.111/",
     image: "https://i.imgur.com/FJwzmah.png",
   },
-  {
-    title: "Workflow Automation Platform",
-    shortDescription:
-      "A platform to automate tasks and integrate various applications seamlessly.",
-    fullDescription:
-      "This workflow automation platform empowers users to connect multiple applications and automate repetitive tasks effortlessly. Featuring a modern and intuitive user interface, it allows users to create multi-step workflows, schedule automation, and monitor activity logs. With pre-built integrations and custom webhook support, the platform is designed for scalability and adaptability to diverse workflows.",
-    period: "Aug. 2023 - Sep. 2023",
-    techStack: [
-      "React.js",
-      "Node.js",
-      "MongoDB",
-      "Webhooks",
-      "REST API",
-      "Redux Toolkit",
-    ],
-    highlights: [
-      "User-friendly interface for building multi-step workflows",
-      "Pre-built integrations with popular applications",
-      "Custom webhook support for advanced use cases",
-      "Real-time activity monitoring and error tracking",
-      "Schedule-based and trigger-based automation options",
-      "Scalable backend with robust REST API integration",
-    ],
-    github: "https://github.com/yourusername/workflow-automation",
-    live: "https://workflowautomation-example.com",
-    image: "https://i.imgur.com/NzqgbCC.png",
-  },
+  // {
+  //   title: "Workflow Automation Platform",
+  //   shortDescription:
+  //     "A platform to automate tasks and integrate various applications seamlessly.",
+  //   fullDescription:
+  //     "This workflow automation platform empowers users to connect multiple applications and automate repetitive tasks effortlessly. Featuring a modern and intuitive user interface, it allows users to create multi-step workflows, schedule automation, and monitor activity logs. With pre-built integrations and custom webhook support, the platform is designed for scalability and adaptability to diverse workflows.",
+  //   period: "Aug. 2023 - Sep. 2023",
+  //   techStack: [
+  //     "React.js",
+  //     "Node.js",
+  //     "MongoDB",
+  //     "Webhooks",
+  //     "REST API",
+  //     "Redux Toolkit",
+  //   ],
+  //   highlights: [
+  //     "User-friendly interface for building multi-step workflows",
+  //     "Pre-built integrations with popular applications",
+  //     "Custom webhook support for advanced use cases",
+  //     "Real-time activity monitoring and error tracking",
+  //     "Schedule-based and trigger-based automation options",
+  //     "Scalable backend with robust REST API integration",
+  //   ],
+  //   github: "https://github.com/yourusername/workflow-automation",
+  //   live: "https://workflowautomation-example.com",
+  //   image: "https://i.imgur.com/NzqgbCC.png",
+  // },
   {
     title: "Habit Analytics Tracker",
     shortDescription:
@@ -178,13 +178,12 @@ export const experiences = [
     company: "MithilaStack",
     period: "Aug. 2024 - Present",
     responsibilities: [
-      "Developed a contract management system, ensuring data integrity and compliance with CIA principles, improving audit traceability by 3x.",
-      "Optimized database performance through strategic indexing and schema refinements, achieving 99.95% uptime and 40% reduction in query latency.",
-      "Automated ticketing system processing 100+ daily tickets with 95% accuracy in geospatial assignments, reducing manual routing by 75%.",
-      "Implemented RBAC system managing 6 role hierarchies and 20+ permission sets with JWT, Zod-based validation, and rate limiting preventing unauthorized access.",
-      "Real-time chat systems with socket servers, enabling seamless collaboration and reducing response time.",
-      "Streamlined document management with file uploads, metadata processing, and 2-factor OTP verification.",
-      "Monitoring and error-handling frameworks for centralized logging, issue resolution and fault tolerance.",
+      "Led contract system development, enhancing auditability and ensuring full compliance.",
+      "Optimized database performance, achieving high uptime and significant latency reduction.",
+      "Automated ticketing system, drastically reducing manual work and improving assignment accuracy.",
+      "Enhanced system security using role-based access control and rate-limiting.",
+      "Developed real-time chat for seamless team collaboration and faster communication.",
+      "Streamlined document management with secure and efficient handling processes.",
     ],
   },
   {
@@ -192,8 +191,8 @@ export const experiences = [
     company: "Pariksha Labs",
     period: "Mar. 2023 - Jul. 2024",
     responsibilities: [
-      "Built React.js form for SAP deployment, integrated CSV import and MongoDB storage.",
-      "Automated cloud provisioning and infrastructure using Terraform and Jenkins.",
+      "Developed a React.js form with efficient data import and storage for SAP deployment.",
+      "Automated cloud provisioning and infrastructure deployment using Terraform and Jenkins, reducing setup time by 50%.",
     ],
   },
 ];
