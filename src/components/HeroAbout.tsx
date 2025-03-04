@@ -187,7 +187,7 @@ export function HeroAbout()
                                     My skills span SQL/NoSQL databases, Microservices Architecture, and DevOps practices, allowing me to deliver robust and efficient solutions.
                                 </p>
                                 <p>
-                                    I believe in writing clean, maintainable code that balances technical excellence with pragmatic delivery. My approach combines thorough planning with agile execution to create systems that not only work well today but remain adaptable for tomorrow's needs.
+                                    I believe in writing clean, maintainable code that balances technical excellence with pragmatic delivery. My approach combines thorough planning with agile execution to create systems that not only work well today but remain adaptable for tomorrow&apos;s needs.
                                 </p>
                             </div>
 

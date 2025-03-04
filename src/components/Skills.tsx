@@ -171,7 +171,7 @@ export function Skills()
                     </div>
 
                     <p className="text-muted-foreground max-w-3xl text-sm sm:text-base md:text-lg">
-                        These are the technologies I've worked with throughout my career, categorized by their purpose and
+                        These are the technologies I&apos;ve worked with throughout my career, categorized by their purpose and
                         functionality.
                     </p>
 
