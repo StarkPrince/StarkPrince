@@ -1,5 +1,5 @@
 
-# Prince Raj   [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=safari)](https://princeraj.one)
+# Prince Raj   [![Portfolio](https://img.shields.io/badge/-Portfolio-000000?style=for-the-badge&logo=safari)](https://princeraj.info)
   
 
 ## Full Stack Developer
@@ -8,7 +8,7 @@ As a Backend Developer with expertise in building high-performance, scalable sys
 
 ## Portfolio
 
-Check out my portfolio at [princeraj.one](https://princeraj.one/) to see my latest projects and blogs!
+Check out my portfolio at [princeraj.info](https://princeraj.info/) to see my latest projects and blogs!
  
  
  ## Languages by Time
